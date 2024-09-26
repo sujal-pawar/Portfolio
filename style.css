@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .home{
   display: flex;
   height: 100vh;
@@ -51,3 +52,58 @@ section{
   margin: 0px;
 }
 
+=======
+.home{
+  display: flex;
+  height: 100vh;
+  background-image: url(./images/background2.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+}
+.Head-Text{
+  margin: 0px;
+  font-family: "Playfair Display", serif;
+}
+#certification{
+  font-family: "Playfair Display", serif;
+  font-weight: 100px;
+}
+p{
+  font-family: "Wittgenstein", serif;
+  font-style: normal;
+}
+.skills{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:0px;
+  margin: 20px;
+  font-size: 1.1rem;
+  justify-content: center;
+}
+.skills{
+  background-color: #EEEDEB;
+}
+li{
+  font-family: "Wittgenstein", serif;
+  font-style: normal;
+}
+.footer{
+  background-color: #EEEDEB;
+}
+button{
+  border: none;
+}
+body > section.skills{
+  display: flex;
+  padding: 20px;
+  gap: 15px;
+  justify-content: center;
+}
+section{
+  margin: 0px;
+}
+
+>>>>>>> 6b13ae1 (Added NewsPulse)
