@@ -149,3 +149,135 @@ section{
       font-size: 1.1rem;
   }
 }
+
+.projects {
+  padding: 4rem 0;
+}
+
+.project-card {
+  background: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.1) !important;
+  min-height: 500px; /* Set minimum card height */
+}
+
+.project-image-container {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-image-container img {
+  object-position: center top;
+  transition: transform 0.3s ease;
+}
+
+.project-image-container:hover img {
+  transform: scale(1.03);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .project-card {
+      min-height: auto;
+      flex-direction: column;
+  }
+  
+  .project-image-container {
+      height: 400px;
+      order: -1;
+  }
+  
+  .project-content {
+      padding: 2rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-image-container {
+      height: 300px;
+  }
+  
+  .display-5 {
+      font-size: 2.25rem;
+  }
+}
+
+/* Ensure proper image alignment */
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.order-lg-1 { order: 2; }
+.order-lg-2 { order: 1; }
+
+@media (min-width: 992px) {
+  .order-lg-1 { order: 1; }
+  .order-lg-2 { order: 2; }
+}
+
+.footer {
+  background: #f8f9fa;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.social-link {
+  transition: all 0.3s ease;
+  padding: 12px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.social-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.social-link.linkedin:hover {
+  background: #0a66c2;
+}
+
+.social-link.github:hover {
+  background: #333;
+}
+
+.social-link:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.footer span.text-dark {
+  position: relative;
+}
+
+.footer span.text-dark::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #0d6efd;
+  transition: width 0.3s ease;
+}
+
+.footer span.text-dark:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .footer .col-md-6 {
+      width: 100%;
+      justify-content: center !important;
+      text-align: center !important;
+  }
+  
+  .social-links {
+      justify-content: center !important;
+      margin-top: 1.5rem;
+  }
+  
+  .footer p {
+      font-size: 0.9rem;
+  }
+}
