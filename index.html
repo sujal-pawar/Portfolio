@@ -24,52 +24,83 @@
 </head>
 
 <body>
-  <Section class="home">
+  <section class="home">
     <div>
       <div class="Head-Text">
         <h1 align="center" class="display-5 fw-bold text-body-emphasis lh-1 mb-3">I'm Sujal</h1>
-        <h2>A Tech Enthusaist</h2>
+        <h2>A Tech Enthusiast</h2>
       </div>
     </div>
-  </Section>
+  </section>
 
   <section class="intro">
     <div class="container px-4 py-4 py-lg-5">
-        <div class="row align-items-center g-4 g-lg-5">
-            <!-- Image Column -->
-            <div class="col-12 col-lg-6 order-lg-2 ">
-                <img src="./images/profile1.jpg" 
-                     class="profile-img img-fluid rounded-4"
-                     alt="Sujal Pawar Profile Photo"
-                     loading="lazy">
-            </div>
-
-            <!-- Text Content Column -->
-            <div class="col-12 col-lg-6 order-lg-1">
-                <div class="pe-lg-4">
-                    <h2 class="display-4 display-lg-3 fw-bold text-dark mb-4">
-                        Hello
-                    </h2>
-                    <div class="lead-content">
-                        <p class="lead mb-4">
-                          I am a Computer Science and Engineering (CSE) student with a deep passion for web development.
-                          I love creating innovative and user-friendly websites and applications. Along with web development,
-                          I have strong knowledge of Java & other programming languages such as  ,Python, C, and C++. I am also a dedicated problem
-                          solver, always looking for efficient and effective solutions to complex challenges.
-                        </p>                      
-                    </div>
-                </div>
-            </div>
+      <div class="row align-items-center g-4 g-lg-5">
+        <!-- Image Column -->
+        <div class="col-12 col-lg-6 order-lg-2 ">
+          <img src="./images/profile1.jpg" class="profile-img img-fluid rounded-4" alt="Sujal Pawar Profile Photo"
+            loading="lazy">
         </div>
+
+        <!-- Text Content Column -->
+        <div class="col-12 col-lg-6 order-lg-1">
+          <div class="pe-lg-4">
+            <h2 class="display-4 display-lg-3 fw-bold text-dark mb-4">
+              Hello
+            </h2>
+            <div class="lead-content">
+              <p class="lead mb-4">
+                I am a Computer Science and Engineering (CSE) student with a deep passion for web development.
+                I love creating innovative and user-friendly websites and applications. Along with web development,
+                I have strong knowledge of Java & other programming languages such as Python, C, and C++. I am also a
+                dedicated problem
+                solver, always looking for efficient and effective solutions to complex challenges.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-  <h2 id="certification" class="text-center">Projects</h2>
+  <h1 id="certification" class="text-center">Projects</h1>
 
+  <!-- LegacyNote Project -->
+  <section class="projects">
+    <div class="container">
+      <div class="project-card row g-0 align-items-center rounded-4 overflow-hidden shadow-lg mb-5">
+        <div class="col-lg-6 p-4 p-md-5 order-lg-1">
+          <div class="project-content">
+            <span class="badge bg-dark mb-3">Web Development</span>
+            <h2 class="display-5 fw-bold mb-4">LegacyNote</h2>
+            <p class="lead text-secondary mb-4">
+              LegacyNote is a secure, full-stack digital time capsule and note-taking app built with React, Node.js,
+              and MongoDB. With end-to-end encryption, reliable persistent storage, and customizable scheduler
+              reminders—all wrapped in a sleek, responsive UI—it keeps your ideas safe and accessible for the long haul.
+            </p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="https://github.com/sujal-pawar/LegacyNote" class="btn btn-dark btn-lg px-4 py-2" target="_blank"
+                rel="noopener noreferrer">
+                View on GitHub ↗
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 project-image-container order-lg-2">
+          <a href="https://github.com/sujal-pawar/LegacyNote" class="d-block h-100 position-relative rounded-3"
+            target="_blank" rel="noopener noreferrer">
+            <img src="./images/legacynote.png" alt="LegacyNote page preview"
+              class="img-fluid w-100 h-100 borderrounded-[2px] object-fit-cover">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Existing NewsPulse Project -->
   <section class="projects">
     <div class="container ">
-      <div class="project-card row g-0 align-items-center rounded-4 overflow-hidden shadow-lg">
-        <!-- Text Content Column -->
+      <div class="project-card row g-0 align-items-center rounded-4 overflow-hidden shadow-lg mb-5">
         <div class="col-lg-6 p-4 p-md-5 order-lg-1">
           <div class="project-content">
             <span class="badge bg-dark mb-3">Web Development</span>
@@ -88,8 +119,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Image Column -->
         <div class="col-lg-6 project-image-container order-lg-2">
           <a href="https://thenewspulse.vercel.app/" class="d-block h-100 position-relative rounded-3" target="_blank"
             rel="noopener noreferrer">
@@ -101,16 +130,17 @@
     </div>
   </section>
 
+  <!-- Step Up Project -->
   <section class="projects">
     <div class="container">
-      <div class="project-card row g-0 align-items-center rounded-4 overflow-hidden shadow-lg">
-        <!-- Text Content Column -->
+      <div class="project-card row g-0 align-items-center rounded-4 overflow-hidden shadow-lg mb-5">
         <div class="col-lg-6 p-4 p-md-5 order-lg-1">
           <div class="project-content">
             <span class="badge bg-dark mb-3">Web Development</span>
             <h2 class="display-5 fw-bold mb-4">Step Up</h2>
             <p class="lead text-secondary mb-4">
-              Step Up is a sleek, modern online shoe store featuring a clean layout and vibrant visuals, and its responsive design ensures a smooth shopping experience on any device.
+              Step Up is a sleek, modern online shoe store featuring a clean layout and vibrant visuals, and its
+              responsive design ensures a smooth shopping experience on any device.
             </p>
             <div class="d-flex gap-3 flex-wrap">
               <a href="https://stepupshoe.vercel.app/" class="btn btn-dark btn-lg px-4 py-2" target="_blank"
@@ -120,89 +150,71 @@
             </div>
           </div>
         </div>
-
-        <!-- Image Column -->
         <div class="col-lg-6 project-image-container order-lg-2">
-          <a href="https://stepupshoe.vercel.app/" class="d-block h-100 position-relative rounded-3"
-            target="_blank" rel="noopener noreferrer">
-            <img src="./images/stepup.png" alt="Signup page preview" class="img-fluid w-100 h-100 object-fit-cover">
+          <a href="https://stepupshoe.vercel.app/" class="d-block h-100 position-relative rounded-3" target="_blank"
+            rel="noopener noreferrer">
+            <img src="./images/stepup.png" alt="Step Up page preview" class="img-fluid w-100 h-100 object-fit-cover">
           </a>
         </div>
       </div>
     </div>
   </section>
 
-<!--   <section class="projects">
-    <div class="container ">
-      <div class="project-card row g-0 align-items-center rounded-4 overflow-hidden shadow-lg">
-        
+  <!-- TaskBuckets Project -->
+  <!-- <section class="projects">
+    <div class="container">
+      <div class="project-card row g-0 align-items-center rounded-4 overflow-hidden shadow-lg mb-5">
         <div class="col-lg-6 p-4 p-md-5 order-lg-1">
           <div class="project-content">
-            <span class="badge bg-dark mb-3">Web Development</span>
-            <h2 class="display-5 fw-bold mb-4">Modern Signup Interface</h2>
+            <span class="badge bg-primary mb-3">Productivity</span>
+            <h2 class="display-5 fw-bold mb-4">TaskBuckets</h2>
             <p class="lead text-secondary mb-4">
-              A contemporary signup page featuring clean aesthetics and client-side form validation.
-              Built with semantic HTML5 and modern CSS3 techniques, this responsive design ensures
-              optimal user experience across devices while maintaining data integrity through
-              input validation patterns.
+              TaskBuckets is a task management tool designed to organize and track your daily tasks efficiently. Built with React and localStorage, it features draggable buckets and priority labels.
             </p>
             <div class="d-flex gap-3 flex-wrap">
-              <a href="https://sujal-pawar.github.io/ACES-Signup-Page/" class="btn btn-dark btn-lg px-4 py-2"
-                target="_blank" rel="noopener noreferrer">
-                Live Demo ↗
+              <a href="https://github.com/sujal-pawar/TaskBuckets" class="btn btn-dark btn-lg px-4 py-2" target="_blank" rel="noopener noreferrer">
+                View on GitHub ↗
               </a>
             </div>
           </div>
         </div>
-
-        
         <div class="col-lg-6 project-image-container order-lg-2">
-          <a href="https://sujal-pawar.github.io/ACES-Signup-Page/" class="d-block h-100 position-relative rounded-3"
-            target="_blank" rel="noopener noreferrer">
-            <img src="./images/signup.png" alt="Signup page preview" class="img-fluid w-100 h-100 object-fit-cover">
+          <a href="https://github.com/sujal-pawar/TaskBuckets" class="d-block h-100 position-relative rounded-3" target="_blank" rel="noopener noreferrer">
+            <img src="./images/taskbuckets.png" alt="TaskBuckets page preview" class="img-fluid w-100 h-100 object-fit-cover">
           </a>
         </div>
       </div>
     </div>
-  </section>
- -->
+  </section> -->
+
+  <!-- Tindog Project (commented out) -->
+  <!--
   <section class="projects">
     <div class="container py-5">
       <div class="project-card row g-0 align-items-center rounded-4 overflow-hidden shadow-lg">
-        <!-- Text Content Column -->
         <div class="col-lg-6 p-4 p-md-5 order-lg-1">
           <div class="project-content">
             <span class="badge bg-dark mb-3">Web Development</span>
             <h2 class="display-5 fw-bold mb-4">Tindog</h2>
             <p class="lead text-secondary mb-4">
-              Imagine an easy-to-use online platform where dogs can find playmates and new friends. It aims
-              to make it simple for pet owners to connect their furry pals.
-              Create fun profiles for your dogs, showing their personalities and favorite toys. With a quick swipe, find
-              the perfect buddy for your dog to play with. We're all about bringing dogs and their owners together for
-              fun
-              and friendship.
+              Imagine an easy-to-use online platform where dogs can find playmates and new friends. It aims...
             </p>
             <div class="d-flex gap-3 flex-wrap">
-              <a href="https://sujal-pawar.github.io/Tindog/" class="btn btn-dark btn-lg px-4 py-2" target="_blank"
-                rel="noopener noreferrer">
+              <a href="https://sujal-pawar.github.io/Tindog/" class="btn btn-dark btn-lg px-4 py-2" target="_blank" rel="noopener noreferrer">
                 Live Demo ↗
               </a>
             </div>
           </div>
         </div>
-
-        <!-- Image Column -->
         <div class="col-lg-6 project-image-container order-lg-2">
-          <a href="https://sujal-pawar.github.io/Tindog/" class="d-block h-100 position-relative rounded-3" target="_blank"
-            rel="noopener noreferrer">
-            <img src="./images/iphone.png" alt="Tindog page preview"
-              class="img-fluid w-100 h-100 object-fit-cover">
+          <a href="https://sujal-pawar.github.io/Tindog/" class="d-block h-100 position-relative rounded-3" target="_blank" rel="noopener noreferrer">
+            <img src="./images/iphone.png" alt="Tindog page preview" class="img-fluid w-100 h-100 object-fit-cover">
           </a>
         </div>
       </div>
     </div>
   </section>
-
+  -->
 
   <!-- Skills Section -->
   <section class="skills py-5">
@@ -214,23 +226,11 @@
             <div class="card-body">
               <h5 class="card-title skill-title mb-4">Technical Expertise</h5>
               <ul class="skill-list">
-                <li class="d-flex align-items-center mb-3">
-                  <span class="bullet me-3">•</span>
-                  Web Development
-                </li>
-                <li class="d-flex align-items-center mb-3">
-                  <span class="bullet me-3">•</span>
-                  Java, C/C++, & Python Programming
-                </li>
-               
-                <li class="d-flex align-items-center mb-3">
-                  <span class="bullet me-3">•</span>                  
-                  MongoDB & PostgreSQL
-                </li>
-                <li class="d-flex align-items-center">
-                  <span class="bullet me-3">•</span>
-                  Generative AI
-                </li>
+                <li class="d-flex align-items-center mb-3"><span class="bullet me-3">•</span>Web Development</li>
+                <li class="d-flex align-items-center mb-3"><span class="bullet me-3">•</span>Java, C/C++, & Python
+                  Programming</li>
+                <li class="d-flex align-items-center mb-3"><span class="bullet me-3">•</span>MongoDB & PostgreSQL</li>
+                <li class="d-flex align-items-center"><span class="bullet me-3">•</span>Generative AI</li>
               </ul>
             </div>
           </div>
@@ -240,21 +240,11 @@
             <div class="card-body">
               <h5 class="card-title skill-title mb-4">Professional Skills</h5>
               <ul class="skill-list">
-                <li class="d-flex align-items-center mb-3">
-                  <span class="bullet me-3">•</span>
-                  Excellent Communication
+                <li class="d-flex align-items-center mb-3"><span class="bullet me-3">•</span>Excellent Communication
                 </li>
-                <li class="d-flex align-items-center mb-3">
-                  <span class="bullet me-3">•</span>
-                  Problem Solving
-                </li>
-                <li class="d-flex align-items-center mb-3">
-                  <span class="bullet me-3">•</span>
-                  Project Leadership
-                </li>
-                <li class="d-flex align-items-center">
-                  <span class="bullet me-3">•</span>
-                  Cross-functional Collaboration
+                <li class="d-flex align-items-center mb-3"><span class="bullet me-3">•</span>Problem Solving</li>
+                <li class="d-flex align-items-center mb-3"><span class="bullet me-3">•</span>Project Leadership</li>
+                <li class="d-flex align-items-center"><span class="bullet me-3">•</span>Cross-functional Collaboration
                 </li>
               </ul>
             </div>
@@ -269,9 +259,11 @@
     <div class="container">
       <h2 class="text-center mb-5 section-title">Certifications</h2>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- certification cards -->
         <div class="col">
           <div class="card h-100 certification-card">
-            <a href="https://www.udemy.com/certificate/UC-1a100784-9a21-4dc3-b5b6-2cd2b55a8a1e/" class="text-decoration-none text-dark">
+            <a href="https://www.udemy.com/certificate/UC-1a100784-9a21-4dc3-b5b6-2cd2b55a8a1e/"
+              class="text-decoration-none text-dark">
               <div class="certification-image">
                 <img src="./images/udemy.png" class="card-img-top" alt="Python Certification">
               </div>
@@ -285,7 +277,8 @@
         </div>
         <div class="col">
           <div class="card h-100 certification-card">
-            <a href="https://www.coursera.org/account/accomplishments/verify/P76MN6FA8F3H" class="text-decoration-none text-dark">
+            <a href="https://www.coursera.org/account/accomplishments/verify/P76MN6FA8F3H"
+              class="text-decoration-none text-dark">
               <div class="certification-image">
                 <img src="./images/google.png" class="card-img-top" alt="Data Structures Certification">
               </div>
@@ -299,7 +292,8 @@
         </div>
         <div class="col">
           <div class="card h-100 certification-card">
-            <a href="https://www.coursera.org/account/accomplishments/verify/JL6SU4RX9TWL" class="text-decoration-none text-dark">
+            <a href="https://www.coursera.org/account/accomplishments/verify/JL6SU4RX9TWL"
+              class="text-decoration-none text-dark">
               <div class="certification-image">
                 <img src="./images/ai.png" class="card-img-top" alt="AI Certification">
               </div>
@@ -311,6 +305,7 @@
             </a>
           </div>
         </div>
+
       </div>
       <div class="text-center mt-5">
         <a href="https://www.linkedin.com/in/sujal-pawar/" class="btn btn-outline-dark see-more-btn">View All
@@ -319,42 +314,29 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <section class="footer">
     <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-5">
-            <div class="col-md-6 d-flex align-items-center">
-                <a href="https://sujal-pawar.github.io/Portfolio/" class="mb-3 me-2 mb-md-0 text-decoration-none">
-                    <span class="fs-4 fw-bold text-dark">Sujal</span>
-                    <span class="fs-4 fw-light text-muted">Pawar</span>
-                </a>
-            </div>
-
-            <div class="col-md-6 text-end">
-                <div class="social-links d-flex justify-content-end gap-3">
-                    <a href="https://www.linkedin.com/in/sujal-pawar/" 
-                       class="social-link linkedin"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        <img src="./svg/linkedin.svg" alt="LinkedIn profile" width="32" height="32">
-                    </a>
-                    <a href="https://github.com/sujal-pawar"
-                       class="social-link github"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        <img src="./svg/github.svg" alt="GitHub profile" width="32" height="32">
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-12 text-center">
-                <p class="mb-0 text-muted">
-                    © 2025 Sujal Pawar. Crafted with 
-                    <span class="text-danger">♥</span>                     
-                </p>
-            </div>
-        </footer>
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-5">
+        <div class="col-md-6 d-flex align-items-center">
+          <a href="https://sujal-pawar.github.io/Portfolio/" class="mb-3 me-2 mb-md-0 text-decoration-none">
+            <span class="fs-4 fw-bold text-dark">Sujal</span><span class="fs-4 fw-light text-muted">Pawar</span>
+          </a>
+        </div>
+        <div class="col-md-6 text-end">
+          <div class="social-links d-flex justify-content-end gap-3">
+            <a href="https://www.linkedin.com/in/sujal-pawar/" class="social-link linkedin" target="_blank"
+              rel="noopener noreferrer"><img src="./svg/linkedin.svg" alt="LinkedIn profile" width="32" height="32"></a>
+            <a href="https://github.com/sujal-pawar" class="social-link github" target="_blank"
+              rel="noopener noreferrer"><img src="./svg/github.svg" alt="GitHub profile" width="32" height="32"></a>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <p class="mb-0 text-muted">© 2025 Sujal Pawar. Crafted with <span class="text-danger">♥</span></p>
+        </div>
+      </footer>
     </div>
-</section>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-Q4j07LKaZJY1zG2WBqO1sxIKBzlRzppCpCl0Jf+ltNCe8vVwbzmyBFdtI8Q4tDXD"
