@@ -209,28 +209,6 @@ body {
   letter-spacing: 2px;
 }
 
-/* Section Dividers */
-.section-divider {
-  height: 2rem;
-  background: linear-gradient(to bottom, var(--dark-bg), var(--darker-bg));
-  position: relative;
-  z-index: 5;
-  overflow: hidden;
-}
-
-.section-divider::before {
-  content: '';
-  position: absolute;
-  top: -10px;
-  left: 0;
-  width: 100%;
-  height: 20px;
-  background: linear-gradient(135deg, var(--dark-bg) 25%, transparent 25%),
-              linear-gradient(225deg, var(--dark-bg) 25%, transparent 25%);
-  background-size: 20px 20px;
-  z-index: 1;
-}
-
 /* Common Section Styles */
 section {
   margin: 0;
@@ -1156,6 +1134,7 @@ button:focus-visible {
 .scroll-down {
   text-align: center;
   margin-top: 2rem;
+  bottom: 0;
   animation: bounce 2s infinite;
 }
 
