@@ -219,30 +219,25 @@ section {
 }
 
 .section-title {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  color: var(--text-primary);
-  letter-spacing: 1px;
-  position: relative;
-  display: inline-block;
-  padding-bottom: 15px;
+    position: relative; /* necessary for ::after positioning */
+    display: inline-block; /* shrink-wrap to text width */
+    padding-bottom: 8px; /* space for the underline */
+    font-weight: 700;
+    color: var(--text-primary);
+    display: inline-block;
+    padding-bottom: 10px;
 }
 
 .section-title::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: 0; /* aligns bottom edge of line with bottom edge of the title */
   left: 50%;
   transform: translateX(-50%);
-  width: 80px;
-  height: 3px;
+  width: 130px;
+  height: 4px;
   background: linear-gradient(90deg, var(--accent-color), #03dac5);
   border-radius: 3px;
-  transition: width 0.3s ease, transform 0.3s ease;
-}
-
-.section-title:hover::after {
-  width: 100px;
 }
 
 /* Intro Section */
@@ -253,7 +248,7 @@ section {
 
 /* Highlight styles */
 .highlight {
-  color: var(--accent-color);
+  color: white;
   font-weight: 500;
 }
 
