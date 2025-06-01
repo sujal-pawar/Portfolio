@@ -50,8 +50,7 @@
       <a class="navbar-brand" href="#">
         <span class="fw-bold">Sujal</span><span class="fw-light text-accent">Pawar</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" id="sidebarToggle" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -82,6 +81,44 @@
       </div>
     </div>
   </nav>
+
+  <!-- Mobile Sidebar -->
+  <div class="mobile-sidebar" id="mobileSidebar">
+    <div class="sidebar-header">
+      <a class="navbar-brand" href="#">
+        <span class="fw-bold">Sujal</span><span class="fw-light text-accent">Pawar</span>
+      </a>
+      <button class="close-sidebar" id="closeSidebar">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <ul class="sidebar-nav">
+      <li class="sidebar-item">
+        <a class="sidebar-link" href="#">Home</a>
+      </li>
+      <li class="sidebar-item">
+        <a class="sidebar-link" href="#projects">Projects</a>
+      </li>
+      <li class="sidebar-item">
+        <a class="sidebar-link" href="#skills">Skills</a>
+      </li>
+      <li class="sidebar-item">
+        <a class="sidebar-link" href="#certifications">Certifications</a>
+      </li>
+      <li class="sidebar-item">
+        <a class="sidebar-link" href="https://github.com/sujal-pawar" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </li>
+      <li class="sidebar-item">
+        <a class="sidebar-link" href="https://www.linkedin.com/in/sujal-pawar/" target="_blank">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
   <!-- Header/Hero Section -->
   <section class="home" id="home">
     <div class="vanta-canvas"></div>
@@ -571,19 +608,15 @@
    document.addEventListener('DOMContentLoaded', () => {
       VANTA.NET({
         el: "#home",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        scale: 1.00,
-        scaleMobile: 1.00,
-        color: 0xb229c5,
-        backgroundColor: 0x0,
-        points: 12.00,
-        maxDistance: 22.00,
-        showshowDots: false,
-        spacing: 18.00
+       mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0xfd3fff,
+  backgroundColor: 0x0
       });
     });
   </script>

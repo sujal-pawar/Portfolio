@@ -7,6 +7,76 @@ document.addEventListener('DOMContentLoaded', function() {  // Elements
   const projectCarousel = document.getElementById('projectCarousel');
   const sections = document.querySelectorAll("section[id]");
   
+  // Mobile Sidebar Elements
+  const mobileSidebar = document.getElementById('mobileSidebar');
+  const sidebarOverlay = document.getElementById('sidebarOverlay');
+  const sidebarToggle = document.getElementById('sidebarToggle');
+  const closeSidebar = document.getElementById('closeSidebar');
+  const sidebarLinks = document.querySelectorAll('.sidebar-link');
+
+  // Toggle Mobile Sidebar
+  function toggleSidebar() {
+    mobileSidebar.classList.toggle('active');
+    sidebarOverlay.classList.toggle('active');
+    document.body.classList.toggle('sidebar-open');
+  }
+
+  // Close sidebar when clicking outside
+  sidebarOverlay.addEventListener('click', toggleSidebar);
+
+  // Toggle sidebar on button click
+  sidebarToggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    toggleSidebar();
+  });
+
+  // Close sidebar on close button click
+  closeSidebar.addEventListener('click', toggleSidebar);
+
+  // Close sidebar on link click (mobile)
+  sidebarLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth < 992) {
+        toggleSidebar();
+      }
+    });
+  });
+
+  // Close sidebar on window resize if open
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 992 && mobileSidebar.classList.contains('active')) {
+      toggleSidebar();
+    }
+  });
+
+  // Add touch swipe support for sidebar
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  document.addEventListener('touchstart', e => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, false);
+
+  document.addEventListener('touchend', e => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  }, false);
+
+  function handleSwipe() {
+    const swipeThreshold = 100;
+    const diff = touchEndX - touchStartX;
+    
+    if (Math.abs(diff) < swipeThreshold) return;
+
+    if (diff > 0) { // Swipe right
+      if (!mobileSidebar.classList.contains('active')) return;
+      toggleSidebar();
+    } else { // Swipe left 
+      if (mobileSidebar.classList.contains('active')) return;
+      toggleSidebar();
+    }
+  }
+
   // Make sure body is visible immediately
   document.body.style.opacity = '1';    // Initialize Bootstrap carousel
   if (projectCarousel) {
