@@ -100,22 +100,6 @@ body {
   border: none;
   padding: 0.5rem;
 }
-/* Project Carousel Styles */
-.carousel-indicators [data-bs-target] {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: var(--dark-accent);
-  border: 2px solid var(--accent-color);
-  opacity: 0.7;
-  margin: 0 6px;
-}
-
-.carousel-indicators .active {
-  background-color: var(--accent-color);
-  opacity: 1;
-  transform: scale(1.2);
-}
 
 
 .navbar-toggler:focus {
@@ -341,95 +325,6 @@ section {
     font-size: 0.9rem;
   }
 }
-
-
-/* Carousel Controls */
-.carousel-control-prev,
-.carousel-control-next {
-  width: 50px;
-  height: 50px;
-  background-color: var(--accent-color);
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 0.7;
-  transition: all 0.3s ease;
-  margin: 0 1rem;
-}
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-  opacity: 1;
-  background-color: var(--accent-color-hover);
-  transform: translateY(-50%) scale(1.1);
-}
-
-/* Carousel Indicators */
-.carousel-indicators {
-  margin-bottom: -1.5rem;
-  z-index: 15;
-}
-
-.carousel-indicators .custom-indicator {
-  width: 32px;
-  height: 32px;
-  margin: 0 8px;
-  border: 2px solid var(--accent-color);
-  background-color: transparent;
-  border-radius: 50%;
-  opacity: 0.7;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-}
-
-.carousel-indicators .custom-indicator.active {
-  background-color: var(--accent-color);
-  opacity: 1;
-  transform: scale(1.1);
-}
-
-.carousel-indicators .indicator-number {
-  color: var(--text-primary);
-  font-weight: bold;
-  font-size: 0.9rem;
-}
-
-.carousel-indicators .custom-indicator.active .indicator-number {
-  color: var(--dark-bg);
-}
-
-/* Carousel Progress Bar */
-.carousel-progress-container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: rgba(255, 255, 255, 0.2);
-  z-index: 10;
-}
-
-.carousel-progress-bar {
-  height: 100%;
-  background: linear-gradient(90deg, var(--accent-color), #03dac5);
-  width: 0;
-  transition: width 0.1s linear;
-}
-
-/* Make carousel items visible */
-.carousel-item {
-  opacity: 1 !important;
-  visibility: visible !important;
-  display: block !important; 
-  min-height: 600px;
-  background-color: var(--dark-card);
-  border-radius: 15px;
-  overflow: hidden;
-  border: 1px solid var(--border-color);
-}
 /* Project badges */
 .badge {
   font-size: 0.85rem;
@@ -449,23 +344,6 @@ section {
   color: var(--dark-bg);
 }
 
-/* Project buttons */
-.carousel-item .btn {
-  margin-top: 1rem;
-  border-color: var(--accent-color);
-  color: var(--accent-color);
-  background-color: transparent;
-  transition: all 0.3s ease;
-  padding: 0.5rem 1.5rem;
-  border-radius: 25px;
-}
-
-.carousel-item .btn:hover {
-  background-color: var(--accent-color);
-  color: var(--dark-bg);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(187, 134, 252, 0.3);
-}
 
 /* Footer */
 .footer {
@@ -701,15 +579,6 @@ p.lead,
 .skill-card:hover,
 .certification-card:hover {
   box-shadow: 0 15px 15px rgba(187, 134, 252, 0.2);
-}
-
-/* Force dark text colors for Bootstrap classes */
-.text-dark {
-  color: var(--text-primary) !important;
-}
-
-.text-body-emphasis {
-  color: var(--text-primary) !important;
 }
 
 /* Responsive Styles */
@@ -1139,10 +1008,11 @@ button:focus-visible {
   flex: 0 0 100%;
   scroll-snap-align: center;
   border-radius: 14px;
-  border: 2px solid transparent;
-  background: 
+  border:1px solid white;
+  /* background: 
     linear-gradient(#000, #000) padding-box,
-    linear-gradient(90deg, #bb86fc, #03dac5) border-box;
+    linear-gradient(90deg, #bb86fc, #03dac5) border-box; */
+
   box-shadow: 0 4px 24px rgba(0,0,0,0.30);
   min-width: 90%;
   margin: auto;
