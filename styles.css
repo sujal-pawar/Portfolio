@@ -223,6 +223,20 @@ section {
   opacity: 1 !important;
 }
 
+/* Profile Image Styles */
+.profile-img {
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid transparent;
+  overflow: hidden;
+  background: 
+    linear-gradient(#000, #000) padding-box,
+    linear-gradient(90deg, var(--accent-color), #03dac5) border-box;
+  box-shadow: 0 0 25px rgba(187, 134, 252, 0.3);
+  transition: all 0.4s ease-in-out;
+}
+
+/* Section Title Styles */
 .section-title {
     position: relative; /* necessary for ::after positioning */
     display: inline-block; /* shrink-wrap to text width */
@@ -1114,6 +1128,11 @@ button:focus-visible {
   margin: 0;
   
 }
+@media (max-width: 768px) {
+  .carousel li {
+    height: 550px;
+  }
+}
 .carousel li {
   flex: 0 0 100%;
   scroll-snap-align: center;
@@ -1124,12 +1143,12 @@ button:focus-visible {
     linear-gradient(90deg, #bb86fc, #03dac5) border-box;
   box-shadow: 0 4px 24px rgba(0,0,0,0.30);
   min-width: 90%;
-  height: 550px;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .slide-content {
   display: flex;
   align-items: center;
