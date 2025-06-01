@@ -199,7 +199,6 @@ body {
   font-size: 4rem;
   margin-bottom: 1rem;
   font: bold;
-  
   text-shadow: 0 3px 10px rgba(187, 134, 252, 0.3);
 }
 
@@ -409,62 +408,6 @@ section {
   overflow: hidden;
   border: 1px solid var(--border-color);
 }
-
-/* Projects Section */
-#projects {
-  background-color: var(--darker-bg);
-  padding: 5rem 0;
-  position: relative;
-}
-
-#projects h2 {
-  color: var(--text-primary);
-  margin-bottom: 1rem;
-}
-
-#projects p.text-muted {
-  color: var(--text-secondary) !important;
-}
-
-/* Project Carousel */
-#projectCarousel {
-  margin: 2rem auto;
-  background-color: var(--dark-card);
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: var(--box-shadow);
-  border: 1px solid var(--border-color);
-  max-width: 1200px;
-}
-
-.carousel-inner {
-  padding: 1.5rem;
-}
-
-.carousel-item {
-  background-color: transparent;
-  border: none;
-}
-
-.carousel-item img {
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: transform 0.5s ease;
-}
-
-.carousel-item h3 {
-  color: var(--text-primary);
-  font-family: 'Playfair Display', serif;
-  margin: 1.5rem 0 1rem;
-}
-
-.carousel-item p, 
-.carousel-item .text-muted,
-.text-muted {
-  color: var(--text-secondary) !important;
-  line-height: 1.6;
-}
-
 /* Project badges */
 .badge {
   font-size: 0.85rem;
@@ -750,7 +693,7 @@ p.lead,
 /* Responsive Styles */
 @media (max-width: 992px) {
   .project-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   
   .project-image-container {
@@ -780,7 +723,7 @@ p.lead,
 
 @media (max-width: 768px) {
   .project-title {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
   
   .project-image-container {
@@ -806,7 +749,7 @@ p.lead,
 
 @media (max-width: 576px) {
   .project-title {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   
   .project-image-container {
@@ -840,7 +783,7 @@ p.lead,
 .tech-badge:hover {
   transform: translateY(-5px) rotate(3deg);
   background-color: var(--accent-color);
-  color: var(--dark-bg);
+  color: white;
   box-shadow: 0 5px 15px rgba(187, 134, 252, 0.3);
 }
 
@@ -1152,5 +1095,87 @@ button:focus-visible {
   }
   60% {
     transform: translateY(4px); 
+  }
+}
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  gap: 2rem;
+  padding: 2rem ;
+  list-style: none;
+  margin: 0;
+  
+}
+.carousel li {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  border-radius: 14px;
+  border: 2px solid transparent;
+  background: 
+    linear-gradient(#000, #000) padding-box,
+    linear-gradient(90deg, #bb86fc, #03dac5) border-box;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.30);
+  min-width: 90%;
+  min-height: 400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  padding: 2rem;
+}
+.slide-text {
+  flex: 1 1 55%;
+}
+.slide-text h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-size: 2.5em;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+.slide-text p {
+  margin: 0;
+  color: #b6b9c9;
+  font-size: 1.1em;
+}
+.slide-image {
+  flex: 1 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-image img {
+  transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+
+.slide-image:hover img {
+  transform: scale(1.03);
+}
+.slide-image img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+  background: #222;
+}
+@media (max-width: 800px) {
+  .slide-content {
+    flex-direction: column;    
+    gap: 1.2rem;
+    padding: 1.2rem;
+  }
+  .slide-image img {
+    max-width: 100%;
   }
 }
