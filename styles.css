@@ -1146,6 +1146,24 @@ button:focus-visible {
   color: #b6b9c9;
   font-size: 1.1em;
 }
+
+.slide-text .mobile-description {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .slide-text .full-description {
+    display: none;
+  }
+  
+  .slide-text .mobile-description {
+    display: block;
+    font-size: 1em;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+}
+
 .slide-image {
   flex: 1 50%;
   display: flex;
