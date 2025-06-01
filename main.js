@@ -180,3 +180,38 @@ document.addEventListener('DOMContentLoaded', function() {  // Elements
   // Initial call to set states correctly
   handleScroll();
 });
+document.addEventListener('DOMContentLoaded', function () {
+      const typewriterElement = document.getElementById('typewriter');
+      const words = ["Tech Enthusiast", "Full Stack Developer", "Problem Solver"];
+      let wordIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+      let typeDelay = 100;
+
+      function type() {
+        const currentWord = words[wordIndex];
+
+        if (isDeleting) {
+          typewriterElement.textContent = currentWord.substring(0, charIndex - 1);
+          charIndex--;
+          typeDelay = 50;
+        } else {
+          typewriterElement.textContent = currentWord.substring(0, charIndex + 1);
+          charIndex++;
+          typeDelay = 150;
+        }
+
+        if (!isDeleting && charIndex === currentWord.length) {
+          isDeleting = true;
+          typeDelay = 1000; // Pause at end of word
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+          typeDelay = 300; // Pause before starting new word
+        }
+
+        setTimeout(type, typeDelay);
+      }
+
+      type();
+    });
