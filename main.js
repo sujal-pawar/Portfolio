@@ -215,3 +215,104 @@ document.addEventListener('DOMContentLoaded', function () {
 
       type();
     });
+// Enhanced Projects Carousel Functionality
+document.addEventListener('DOMContentLoaded', function() {
+  // Project carousel functionality
+  const carousel = document.querySelector('.carousel');
+  const slides = document.querySelectorAll('.project-slide');
+  const prevBtn = document.querySelector('.carousel-nav.prev');
+  const nextBtn = document.querySelector('.carousel-nav.next');
+  const indicators = document.querySelectorAll('.indicator');
+  
+  if (!carousel || !slides.length) return;
+  
+  let currentIndex = 0;
+  const slideCount = slides.length;
+  
+  // Initialize first slide as active
+  updateActiveSlide();
+  
+  // Event listeners for navigation buttons
+  if (prevBtn) {
+    prevBtn.addEventListener('click', function() {
+      navigateSlide(-1);
+    });
+  }
+  
+  if (nextBtn) {
+    nextBtn.addEventListener('click', function() {
+      navigateSlide(1);
+    });
+  }
+  
+  // Event listeners for indicators
+  indicators.forEach((indicator, index) => {
+    indicator.addEventListener('click', function() {
+      currentIndex = index;
+      updateActiveSlide();
+    });
+  });
+  
+  // Keyboard navigation
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'ArrowLeft') {
+      navigateSlide(-1);
+    } else if (e.key === 'ArrowRight') {
+      navigateSlide(1);
+    }
+  });
+  
+  // Touch navigation
+  let touchStartX = 0;
+  let touchEndX = 0;
+  
+  carousel.addEventListener('touchstart', function(e) {
+    touchStartX = e.changedTouches[0].screenX;
+  });
+  
+  carousel.addEventListener('touchend', function(e) {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipeGesture();
+  });
+  
+  function handleSwipeGesture() {
+    if (touchEndX < touchStartX) {
+      // Swipe left -> next slide
+      navigateSlide(1);
+    }
+    if (touchEndX > touchStartX) {
+      // Swipe right -> previous slide
+      navigateSlide(-1);
+    }
+  }
+  
+  function navigateSlide(direction) {
+    currentIndex = (currentIndex + direction + slideCount) % slideCount;
+    updateActiveSlide();
+  }
+  
+  function updateActiveSlide() {
+    // Update slide position
+    const slideWidth = slides[0].offsetWidth;
+    carousel.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    carousel.style.transition = 'transform 0.5s ease';
+    
+    // Update active class on slides
+    slides.forEach((slide, index) => {
+      if (index === currentIndex) {
+        slide.classList.add('active');
+      } else {
+        slide.classList.remove('active');
+      }
+    });
+    
+    // Update indicators
+    indicators.forEach((indicator, index) => {
+      if (index === currentIndex) {
+        indicator.classList.add('active');
+      } else {
+        indicator.classList.remove('active');
+      }
+    });
+  }
+});

@@ -189,183 +189,99 @@
     </div>
   </section>
 
-  <section style="background:#000; padding: 2rem 0;" id="projects">
-    <div class="d-flex justify-content-center align-items-center mb-4">
-      <h2 class="section-title project-title text-center display-6 display-4 section-title fw-bold">Projects</h2>
-    </div>
-    <ul class="carousel">
-      <li>
-        <div class="slide-content">
-          <div class="slide-text">
-            <h2 class="project-title ">MysteryMessage</h2>
-            <p class="full-description">MysteryMessage is a modern Next.js application focused on anonymous, secure
-              communication.
-              Users send and receive honest feedback without revealing their identities. Leveraging the power of
-              TypeScript and the flexibility of Next.js, the project emphasizes scalability,
-              maintainability, and performance.</p>
-            <p class="mobile-description">MysteryMessage: A secure platform for anonymous communication built with
-              Next.js and TypeScript.</p>
-            <div class="tech-stack mb-4">
-              <span class="tech-badge">Next JS</span>
+  <section id="projects" class="projects-section bg-black">
+    <div class="bg-black container">
+      <div class="section-header text-center mb-5">      
+        <h2 class="section-title fw-bold mb-3">Featured Projects</h2>
+        <p class="subtitle text-secondary mb-0">A collection of my work in modern web development and clean UI/UX design.</p>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+         <div class="project-card">
+          <div class="project-image">
+            <img src="./images/legacynote.png" alt="LegacyNote project screenshot">
+            <div class="project-overlay">
+              <a href="https://github.com/sujal-pawar/LegacyNote" target="_blank" class="project-link" title="Source Code"><i class="fab fa-github"></i></a>
+              <a href="https://legacynote.vercel.app/" target="_blank" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">LegacyNote</h3>
+            <p class="project-description">A secure digital time capsule built with React, designed for preserving notes and memories for the future.</p>
+            <div class="project-tech">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">MongoDB</span>
+              <span class="tech-badge">Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="./images/mysterymessage.png" alt="MysteryMessage project screenshot">
+            <div class="project-overlay">
+              <a href="https://github.com/sujal-pawar/MysteryMessage" target="_blank" class="project-link" title="Source Code"><i class="fab fa-github"></i></a>
+              <a href="https://themysterymessage.vercel.app/" target="_blank" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">MysteryMessage</h3>
+            <p class="project-description">A modern Next.js app for anonymous, secure communication. Users send and receive honest feedback with privacy and style.</p>
+            <div class="project-tech">
+              <span class="tech-badge">Next.js</span>
               <span class="tech-badge">TypeScript</span>
               <span class="tech-badge">Tailwind CSS</span>
             </div>
-            <div class="project-links">
-              <a href="https://github.com/sujal-pawar/MysteryMessage" target="_blank" class="btn btn-outline-light">
-                <i class="fab fa-github me-2"></i>Source Code
-              </a>
-            </div>
-          </div>
-          <div class="slide-image ">
-            <a href="https://themysterymessage.vercel.app/" target="_blank"><img src="./images/mysterymessage.png"
-                alt=""></a>
           </div>
         </div>
-      </li>
-      <li>
-        <div class="slide-content">
-          <div class="slide-text">
-            <h2 class="project-title">LegacyNote</h2>
-            <p class="full-description">LegacyNote is a secure digital time capsule built with React, designed to help
-              users preserve notes,
-              messages, and memories for long-term access. It features a clean and intuitive interface, ensuring a
-              seamless experience on any device. The platform focuses on
-              reliability and longevity storing meaningful content you want to revisit years later.
-            </p>
-            <p class="mobile-description">A React-based digital time capsule for preserving memories and
-              messages securely.</p>
-            <div class="tech-stack mb-4">
-              <span class="tech-badge">React</span>
-              <span class="tech-badge">Node.js</span>
-              <span class="tech-badge">MongoDB</span>
-              <span class="tech-badge">Tailwind CSS</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/sujal-pawar/LegacyNote" target="_blank" class="btn btn-outline-light">
-                <i class="fab fa-github me-2"></i>Source Code
-              </a>
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="./images/newspulse.png" alt="NewsPulse project screenshot">
+            <div class="project-overlay">
+              <a href="https://github.com/sujal-pawar/News-Pulse" target="_blank" class="project-link" title="Source Code"><i class="fab fa-github"></i></a>
+              <a href="https://thenewspulse.vercel.app/" target="_blank" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
             </div>
           </div>
-          <div class="slide-image">
-            <a href="https://legacynote.vercel.app/" target="_blank">
-              <img src="./images/legacynote.png" alt="">
-            </a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="slide-content">
-          <div class="slide-text">
-            <h2 class="project-title ">NewsPulse</h2>
-            <p class="full-description">NewsPulse is a modern news aggregation platform built with <u>React</u>. It aims
-              to provide
-              users with the latest news stories in a clean and intuitive interface. The app uses Bootstrap for
-              responsive design, ensuring an enjoyable user experience across devices. It also integrates various news
-              APIs to fetch real-time updates.</p>
-            <p class="mobile-description">A React-based news platform delivering real-time updates with a
-              clean interface.</p>
-            <div class="tech-stack mb-4">
+          <div class="project-info">
+            <h3 class="project-title">NewsPulse</h3>
+            <p class="project-description">A modern news aggregation platform built with React, delivering real-time updates in a clean, intuitive interface.</p>
+            <div class="project-tech">
               <span class="tech-badge">React</span>
               <span class="tech-badge">Node.js</span>
               <span class="tech-badge">MongoDB</span>
             </div>
-            <div class="project-links">
-              <a href="https://github.com/sujal-pawar/News-Pulse/" target="_blank" class="btn btn-outline-light">
-                <i class="fab fa-github me-2"></i>Source Code
-              </a>
-            </div>
-          </div>
-          <div class="slide-image">
-            <a href="https://thenewspulse.vercel.app/" target="_blank"><img src="./images/newspulse.png" alt=""></a>
           </div>
         </div>
-      </li>
-
-      <li>
-        <div class="slide-content">
-          <div class="slide-text">
-            <h2 class="project-title">Stepup</h2>
-            <p class="full-description">Step-Up is a modern and responsive online shoe store built with React and styled
-              using Tailwind CSS. It
-              offers a clean and engaging user interface with smooth animations and a mobile-friendly layout, ensuring a
-              seamless shopping experience across all devices. Step-Up showcases the power of combining modern web
-              technologies.
-            </p>
-            <p class="mobile-description">A modern shoe store with React and Tailwind CSS for seamless
-              user experience.</p>
-            <div class="tech-stack mb-4">
+        <!-- Project 4
+        <div class="project-card">
+          <div class="project-image">
+            <img src="./images/stepup.png" alt="Stepup project screenshot">
+            <div class="project-overlay">
+              <a href="https://github.com/sujal-pawar/Step-Up" target="_blank" class="project-link" title="Source Code"><i class="fab fa-github"></i></a>
+              <a href="https://stepupshoe.vercel.app/" target="_blank" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Stepup</h3>
+            <p class="project-description">A modern online shoe store with smooth animations and a mobile-friendly shopping experience.</p>
+            <div class="project-tech">
               <span class="tech-badge">React</span>
               <span class="tech-badge">Tailwind CSS</span>
             </div>
-            <div class="project-links">
-              <a href="https://github.com/sujal-pawar/Step-Up" target="_blank" class="btn btn-outline-light">
-                <i class="fab fa-github me-2"></i>Source Code
-              </a>
-            </div>
-          </div>
-          <div class="slide-image ">
-            <a href="https://stepupshoe.vercel.app/" target="_blank"><img src="./images/stepup.png" alt=""></a>
           </div>
         </div>
-      </li>
-    </ul>
-  </section>
-
-  <!-- TaskBuckets Project -->
-  <!-- <section class="projects">
-    <div class="container">
-      <div class="project-card row g-0 align-items-center rounded-4 overflow-hidden shadow-lg mb-5">
-        <div class="col-lg-6 p-4 p-md-5 order-lg-1">
-          <div class="project-content">
-            <span class="badge bg-primary mb-3">Productivity</span>
-            <h2 class="display-5 fw-bold mb-4">TaskBuckets</h2>
-            <p class="lead text-secondary mb-4">
-              TaskBuckets is a task management tool designed to organize and track your daily tasks efficiently. Built with React and localStorage, it features draggable buckets and priority labels.
-            </p>
-            <div class="d-flex gap-3 flex-wrap">
-              <a href="https://github.com/sujal-pawar/TaskBuckets" class="btn btn-dark btn-lg px-4 py-2" target="_blank" rel="noopener noreferrer">
-                View on GitHub ↗
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 project-image-container order-lg-2">
-          <a href="https://github.com/sujal-pawar/TaskBuckets" class="d-block h-100 position-relative rounded-3" target="_blank" rel="noopener noreferrer">
-            <img src="./images/taskbuckets.png" alt="TaskBuckets page preview" class="img-fluid w-100 h-100 object-fit-cover">
-          </a>
-        </div>
-      </div>
+      </div> -->
+      
     </div>
-  </section> -->
-
-  <!-- Tindog Project (commented out) -->
-  <!--
-  <section class="projects">
-    <div class="container py-5">
-      <div class="project-card row g-0 align-items-center rounded-4 overflow-hidden shadow-lg">
-        <div class="col-lg-6 p-4 p-md-5 order-lg-1">
-          <div class="project-content">
-            <span class="badge bg-dark mb-3">Web Development</span>
-            <h2 class="display-5 fw-bold mb-4">Tindog</h2>
-            <p class="lead text-secondary mb-4">
-              Imagine an easy-to-use online platform where dogs can find playmates and new friends. It aims...
-            </p>
-            <div class="d-flex gap-3 flex-wrap">
-              <a href="https://sujal-pawar.github.io/Tindog/" class="btn btn-dark btn-lg px-4 py-2" target="_blank" rel="noopener noreferrer">
-                Live Demo ↗
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 project-image-container order-lg-2">
-          <a href="https://sujal-pawar.github.io/Tindog/" class="d-block h-100 position-relative rounded-3" target="_blank" rel="noopener noreferrer">
-            <img src="./images/iphone.png" alt="Tindog page preview" class="img-fluid w-100 h-100 object-fit-cover">
-          </a>
-        </div>
+    <div class="text-center d-flex justify-content-center align-items-center  mt-5">
+        <a href="https://github.com/sujal-pawar" target="_blank" class="view-more-btn">
+          View More Projects <i class="fas fa-arrow-right ms-2"></i>
+        </a>
       </div>
-    </div>
   </section>
-  -->
 
   <!-- Skills Section -->
   <section id="skills" class="skills py-5"
